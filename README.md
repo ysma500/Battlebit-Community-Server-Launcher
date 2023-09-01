@@ -73,6 +73,14 @@ Adjust the server configuration to your preferences by editing the `.env` file:
 
 ## Docker container Usage
 
+To build:
+``` bash
+docker build -t test-windows:latest .
+```
+
+
+To run:
+
 ``` bash
 docker run -e USERNAMER="username" `
 -e PASSWORD="TestPassword" `
