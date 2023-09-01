@@ -7,6 +7,5 @@ COPY .\scripts c:\\BBR\\scripts
 RUN choco install python --version=3.11.0 -y
 RUN dir c:\BBR\server `
     dir c:\BBR\src `
-    c:\BBR\scripts
-ENTRYPOINT ["powershell.exe"]
-CMD [ "dir", "env:" ]
+    dir c:\BBR\scripts
+CMD [ "powershell.exe", "-File", "c:\BBR\scripts\mk_env_file.ps1" ]

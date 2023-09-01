@@ -71,6 +71,29 @@ Adjust the server configuration to your preferences by editing the `.env` file:
 
 ---
 
+## Docker container Usage
+
+``` bash
+docker run -e USERNAMER="username" `
+-e PASSWORD="TestPassword" `
+-e APPID="671860" `
+-e BETAPASSWORD="Passwd" `
+-e BRANCH="Beta" `
+-e SERVER="c:\BBR\server" `
+-e SERVER_PATH="c:\BBR\server\BattleBit.exe" `
+-e SERVER_NAME="This is a Name" `
+-e SERVER_PORT=80 `
+-e SERVER_HZ=120 `
+-e SERVER_ANTICHEAT=EAC `
+-e SERVER_MAX_PING=500 `
+-e SERVER_VOXEL_MODE=false `
+-e SERVER_API_ENDPOINT=192.168.0.50:29294 `
+-e SERVER_FIXED_SIZE=tiny `
+-e SERVER_FIRST_GAMEMODE=TDM `
+-e SERVER_FIRST_MAP=Azagor `
+test-windows:latest
+```
+
 ## Contact
 
 If you encounter any issues during the setup process, please reach out to `jellisy` on the [Support Discord](https://discord.gg/vAP7Ru5EQb). They are available to assist and address any concerns.
